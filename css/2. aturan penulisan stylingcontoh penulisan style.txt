@@ -1,0 +1,43 @@
+contoh penulisan style:
+font-family: menetapkan jenis font yang akan diterapkan pada target.
+font-size: menentukan ukuran pada teks.
+font-weight: menentukan ketebalan pada teks. (misal nilai nya  adalah normal, bold, bolder, lighter atau dengan numeric dari mulai 100 s/d 900)
+font-style: menetapkan styling yang diterapkan pada teks. (font-style: italic)
+font-variant: menentukan teks untuk menggunakan gaya small caps (huruf kapital kecil). (misal font-variant: small - caps
+line-height: 2 //line spacing 2 kali lipat
+text-align: center, dll
+text-indent: 2 atau -2 (jika negatif maka baris pertama akan menjadi hanging bukannya menjorok ke depan)
+text-decoration: underline
+//Memberikan garis bawah (underline) pada teks.
+
+text-decoration: overline
+//Memberikan garis atas (overline) pada teks.
+
+text-decoration: line-through
+//Memberikan efek tulisan dicoret (strikethrough).
+
+text-decoration: non
+//untuk menghilangkan decorasi yang sudah ada, misal pada element a
+
+text-transform: none
+//Teks yang ditampilkan sama seperti yang dituliskan.
+
+text-transform: capitalize
+Membuat huruf pertama besar pada tiap katanya.
+
+text-transform: lowercase
+//Membuat seluruh teks menggunakan huruf kecil.
+
+Text-transform: uppercase
+//Membuat seluruh teks menggunakan huruf besar.
+
+letter-spacing dan word-spacing (nilainya menggunakan satuan px atau em, fungsi mirip tab pada ms. word)
+text-shadow: 2px 2px 0px #000000;  
+//nilai pertama sebagai nilai seberapa jauh ke kiri atau ke kanan (horisontalnya) harus ditampakkan)
+//nilai kedua menunjukkan seberapa jauh ke atas atau ke bawah (vertikal) bayangan harus ditampakkan)
+//nilai ketiga optional, sebagai tingkat keburaman bayangan
+//menentukan warna
+
+
+background-color: yellow
+color: blue
