@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Halaman atau landing page Netas">
-    <meta name="keywords" content="Netas, SKh, SLB, Sekolah, Tangsel">
-    <title>Netas</title>
+    <meta name="description" content="Netas">
+    <meta name="keywords" content="Netas, SKh, SLB, Sekolah Khusus, Tangsel">
+    <title>Kontak-Netas</title>
+        <!-- CSS Utama -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome 5.15.4 agar muncul icont medsos-->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-    <header>
-        <div>
+    <header class="navbar-container">
+        <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
-        <nav>
+        <nav class="nav-list">
             <ul>
 <li><a href="index.html">Beranda</a></li>
         <li><a href="contact.html">Kontak</a></li>
@@ -23,13 +31,16 @@
         </nav>
     </header>
     <main>
-        <section class="left">
-            <h1>Hubungi Kami</h1>
-      <p>Untuk info lebih lanjut anda dapat menghubungi kami di 3 kontak berikut:</p>
-<table>
+        <div class="content">
+            <div class="content-description">
+              <h1 class="title">Hubungi Kami</h1>
+              <p>
+Hubungi kami melalui daftar kontak berikut:
+</p>
+<table border="1" cellpadding="8">
 <tr>
-<th>Layanan</th>
-<th>Kontak</th>
+<th bgcolor="brown">Layanan</th>
+<th bgcolor="gold">Kontak</th>
 </tr>
 <tr>
 <td>Telepon</td>
@@ -40,18 +51,30 @@
 <td>skhn01tangerangselatan@gmail.com</td>
 </tr>
 </table>
-
-            <button id="thankYouButton">Tekan Sekarang!</button>
-        </section>
-        <section class="right">
+            <button id="thankYouButton">Terima Kasih!</button>
+            </div>
+            <div class="content-image">
             <img src="images/gambar5.jpg" alt="Sekolahku">
-        </section>
-    </main>
+        </div>
+        </div>
+        <aside>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/@skhn01kotatangerangselatan"><i class="fab fa-youtube">Youtube</i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram">Instagram</i></a>
+                </li>
+                <li>
+                  <a href="https://web.facebook.com/people/Skhn-Tangsel/pfbid037Y4WFEoVxptDTUkMVFZcyhkqVNQaTVsB5QDNcN4iz62MCzygFc8JjewRSsbYteXfl/?mibextid=ZbWKwL"><i class="fab fa-facebook">Facebook</i></a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+            </main>
     <footer>
-<a href="https://web.facebook.com/people/Skhn-Tangsel/pfbid037Y4WFEoVxptDTUkMVFZcyhkqVNQaTVsB5QDNcN4iz62MCzygFc8JjewRSsbYteXfl/?mibextid=ZbWKwL">Facebook</a>
-        <a href="https://instagram.com/skhn01kotatangerangselatan?utm_source=qr&igshid=OGIxMTE0OTdkZA==">Instagram</a>
-        <a href="https://www.youtube.com/@skhn01kotatangerangselatan">YouTube</a>
-        <p>© 2023 Netas. All rights reserved.</p>
+      <marquee direction="up" height="50" behavior="alternate" scrolldelay="100" scrollamount="15" bgcolor="red">© 2023 Netas. All rights reserved.</marquee>
     </footer>
 
   <script src="js/script.js"></script>

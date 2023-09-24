@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Halaman atau landing page Netas">
-    <meta name="keywords" content="Netas, SKh, SLB, Sekolah, Tangsel">
-    <title>Netas</title>
-    <link rel="stylesheet" href="css/style1.css">
+    <meta name="description" content="Netas">
+    <meta name="keywords" content="Netas, SKh, SLB, Sekolah Khusus, Tangsel">
+    <title>Buletin-Netas</title>
+        <!-- CSS Utama -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome 5.15.4 agar muncul icont medsos-->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-    <header>
+    <header class="navbar-container">
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
-        <nav>
+        <nav class="nav-list">
             <ul>
 <li><a href="index.html">Beranda</a></li>
         <li><a href="contact.html">Kontak</a></li>
@@ -23,49 +31,44 @@
         </nav>
     </header>
     <main>
-        <section class="blog-posts">
-            <article class="blog-post">
-                <h2>ANBK</h2>
-                <p>Sobat Netas ada yang tahu gak apa itu   <marquee direction="up" height="50" behavior="alternate" scrolldelay="100" scrollamount="15" bgcolor="brown">ANBK?</marquee></p>
-<p> ANBK kepanjangan dari asesmen nasional berbasis komputer. Nah kalau sudah tahu, yuk lihat cerita menariknya di <a href="https://www.instagram.com/reel/CxVXwagSe8x/?igshid=MTc4MmM1YmI2Ng==">Link Ini</a></p>
-<p>atau juga bisa melalui <a href="https://m.facebook.com/story.php?story_fbid=pfbid0byoMySvDcUgkUtMAv56EpgHujjAHec5ZLJjFtUoqwk5yAebshw6WjZ5F2P3hhtLdl&id=100085615685204&mibextid=qC1gEa">Link berikut ini</a></p>
-</article>
-</section>
-        <section class="blog-posts">
-            <article class="blog-post">
-                <h2>September Ceria</h2>
-                <p>Diposting pada: <span class="post-date">01-09-23</span></p>
-                <img src="images/gambar1.jpg" alt="Gambar 1">
-                <img src="images/gambar2.jpg" alt="Gambar 2">
-                <img src="images/gambar3.jpg" alt="Gambar 3">
-                <p>Hallo sobat Netas ... Buletin bulan september ini kembali hadir dengan info yang inspiratif dimana pada hari jumat di awal bulan ini SKh N 01 Tangsel menghadirkan kegiatan belajar bersama dalam suasana yang ceria. Buat yang pengin tahu, bisa klik <a href="https://vt.tiktok.com/ZSL74Up68/">Link berikut ini ya</a></p>
-            </article>
-</section>
-        <section class="blog-posts">
-            <article class="blog-post">
-                <h2>Ayo Vaksin!</h2>
-                <p>Diposting pada: <span class="post-date">04-09-23</span></p>
-                <p>Siapa yang sudah divaksin?...</p>
-                <p>Sobat Netas semua jangan lupa vaksin ya ... Baksin itu sehat dan menyenangkan kok .. Pengin lihat buktinya??? Yuk simak <a href="https://www.instagram.com/reel/CwxIE98ys3R/?igshid=MTc4MmM1YmI2Ng==">tayangan berikut!</a></p>
-            </article>
-        <aside class="samping">
-            <h3>Cerita Selanjutnya</h3>
-                <p>Klik link berikut ya untuk lihat cerita keseruan selanjutnya!</p>
-            <ul>
-<li> <a href="https://www.tiktok.com/@skhn1tangsel/video/7272878631276268806?_r=1&_t=8fJqt6Crvvt">Keseruan di Tiktok</a></li>
-<li> <a href="https://www.instagram.com/reel/CwofsE4SnvL/?igshid=MTc4MmM1YmI2Ng%3D%3D">Keseruan di IG</a></li>
-<li> <a href="https://www.facebook.com/reel/621118276555893?fs=e&s=7MtrtK&mibextid=z9DgKg">Keseruan di Fb</a></li>
-<li> <a href="https://www.youtube.com/@skhn01kotatangerangselatan">Keseruan di Youtube</a></li>
-            </ul>
-            <!-- Anda bisa menambahkan konten sampingan lainnya di sini -->
-        </aside>
-        </section>
-    </main>
+        <div class="content">
+            <div class="content-description">
+              <h1 class="title">IHT IKM</h1>
+              <p>
+                Sobat Netas sudah tahukan kalau kegiatan pembelajaran di sekolah kini telah menerapkan kurikulum baru?
+              </p>
+<p>
+  Ya benar! Kurikulum baru itu adalah Kurikulum Merdeka yang dulu pada awal kemunculannya dikenal pula sebagai kurikulum Prototype. 
+</p>
+<p>
+Pengin tahu serunya In house trainning tentang implementasi kurikulum Merdeka di SKh Negeri 01 Tangsel?
+</p>
+            <button id="sosmed">Klik di sini ya!</button>
+            </div>
+            <div class="content-image">
+            <img src="images/gambar0.jpg" alt="foto platihan">
+        </div>
+        </div>
+        <aside>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/@skhn01kotatangerangselatan"><i class="fab fa-youtube">Youtube</i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram">Instagram</i></a>
+                </li>
+                <li>
+                  <a href="https://web.facebook.com/people/Skhn-Tangsel/pfbid037Y4WFEoVxptDTUkMVFZcyhkqVNQaTVsB5QDNcN4iz62MCzygFc8JjewRSsbYteXfl/?mibextid=ZbWKwL"><i class="fab fa-facebook">Facebook</i></a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+            </main>
     <footer>
-<a href="https://web.facebook.com/people/Skhn-Tangsel/pfbid037Y4WFEoVxptDTUkMVFZcyhkqVNQaTVsB5QDNcN4iz62MCzygFc8JjewRSsbYteXfl/?mibextid=ZbWKwL">Facebook</a>
-        <a href="https://instagram.com/skhn01kotatangerangselatan?utm_source=qr&igshid=OGIxMTE0OTdkZA==">Instagram</a>
-        <a href="https://www.youtube.com/@skhn01kotatangerangselatan">YouTube</a>
-        <p>© 2023 Netas. All rights reserved.</p>
+      <marquee direction="up" height="50" behavior="alternate" scrolldelay="100" scrollamount="15" bgcolor="red">© 2023 Netas. All rights reserved.</marquee>
     </footer>
+
+  <script src="js/script1.js"></script>
 </body>
 </html>

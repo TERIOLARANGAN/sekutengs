@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Halaman atau landing page Netas">
-    <meta name="keywords" content="Netas, SKh, SLB, Sekolah, Tangsel">
-    <title>Netas</title>
+    <meta name="description" content="Netas">
+    <meta name="keywords" content="Netas, SKh, SLB, Sekolah Khusus, Tangsel">
+    <title>Beranda-Netas</title>
+        <!-- CSS Utama -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome 5.15.4 agar muncul icont medsos-->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-    <header>
-        <div>
+    <header class="navbar-container">
+        <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
-        <nav>
+        <nav class="nav-list">
             <ul>
 <li><a href="index.html">Beranda</a></li>
         <li><a href="contact.html">Kontak</a></li>
@@ -23,21 +31,39 @@
         </nav>
     </header>
     <main>
-        <section class="left">
-            <h1>Selamat Datang Di Netas</h1>
-      <p>Netas adalah media yang memuat informasi seputar kegiatan yang diselenggarakan di sekolah khusus SKhN 01 Tangsel. Selain itu, Disini akan disajikan pula berbagai informasi menarik lainnya yang tentunya akan dapat menjadi sumber inspirasi.</p>
-      <p><mark>Gunakan link navigasi di atas untuk mencari informasi yang anda butuhkan atau klik link di bawah untuk melihat aktivitas sosial media kami.</mark></p>
+        <div class="content">
+            <div class="content-description">
+              <h1 class="title">Selamat Datang Di Netas</h1>
+              <p>
+Netas adalah media yang memuat informasi seputar kegiatan yang diselenggarakan di sekolah khusus SKhN 01 Tangsel. Selain itu, Disini akan disajikan pula berbagai informasi menarik lainnya yang tentunya akan dapat menjadi sumber inspirasi bagi anda.
+</p>
+<p>
+<mark>Gunakan navigasi menu di atas untuk mendapatkan informasi yang anda butuhkan.</mark>
+</p>
             <button id="thankYouButton">Tekan Sekarang!</button>
-        </section>
-        <section class="right">
+            </div>
+            <div class="content-image">
             <img src="images/gambar5.jpg" alt="Sekolahku">
-        </section>
-    </main>
+        </div>
+        </div>
+        <aside>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/@skhn01kotatangerangselatan"><i class="fab fa-youtube">Youtube</i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram">Instagram</i></a>
+                </li>
+                <li>
+                  <a href="https://web.facebook.com/people/Skhn-Tangsel/pfbid037Y4WFEoVxptDTUkMVFZcyhkqVNQaTVsB5QDNcN4iz62MCzygFc8JjewRSsbYteXfl/?mibextid=ZbWKwL"><i class="fab fa-facebook">Facebook</i></a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+            </main>
     <footer>
-<a href="https://web.facebook.com/people/Skhn-Tangsel/pfbid037Y4WFEoVxptDTUkMVFZcyhkqVNQaTVsB5QDNcN4iz62MCzygFc8JjewRSsbYteXfl/?mibextid=ZbWKwL">Facebook</a>
-        <a href="https://instagram.com/skhn01kotatangerangselatan?utm_source=qr&igshid=OGIxMTE0OTdkZA==">Instagram</a>
-        <a href="https://www.youtube.com/@skhn01kotatangerangselatan">YouTube</a>
-        <p>© 2023 Netas. All rights reserved.</p>
+      <marquee direction="up" height="50" behavior="alternate" scrolldelay="100" scrollamount="15" bgcolor="red">© 2023 Netas. All rights reserved.</marquee>
     </footer>
 
   <script src="js/script.js"></script>

@@ -1,120 +1,207 @@
-body {
-    background-color: beige;
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+   
+  body {
+    height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-header, main {
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-header {
-    padding: 16px;
+     display: flex;
+    flex-direction: column;
+  }
+   
+  header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
     display: flex;
-    justify-content: space-between;
+   background-color: red;
+    justify-content: space-around;
     align-items: center;
-    background-color: #800000; /* Warna merah marun */
-    color: white; /* Warna teks putih */
-}
-
-header .logo {
-    flex: 1; /* Meresponsi ukuran logo */
-}
-
-header nav {
-    flex: 1; /* Meresponsi ukuran navigasi */
-}
-
-header nav ul {
-    list-style: none;
+    padding-block: 1rem;
+    z-index: 999;
+  }
+   
+  header.navbar-container .logo img {
+    width: 150px;
+  }
+   
+  header.navbar-container .nav-list ul {
+    padding-left: 0;
     display: flex;
-    gap: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    padding: 0 8px;
-}
-
-.blog-posts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 32px; /* Tambahkan jarak dari header */
-    padding: 0 16px; /* Tambahkan padding kiri dan kanan */
-}
-
-.blog-post {
-    flex-basis: calc(33.33% - 16px);
-    background-color: #ffffff; /* Warna putih atau warna cerah lainnya */
-    padding: 16px; /* Tambahkan padding ke konten posting */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-aside {
-    flex-basis: 300px;
-    background-color: #f2f2f2;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-aside h3 {
-    font-size: 20px;
-    margin-bottom: 16px;
-}
-
-aside ul {
-    list-style: none;
-    padding: 0;
-}
-
-aside li {
-    margin-bottom: 8px;
-}
-
-footer {
-    background-color: #1d6d4d;
-    color: white;
-    text-align: center;
-    padding: 16px;
-}
-
-footer a {
-    color: white;
+    justify-content: center;
+    gap: 2rem 1rem;
+  }
+   
+  header.navbar-container .nav-list li {
+    list-style-type: none;
+  }
+   
+  header.navbar-container .nav-list li a {
     text-decoration: none;
-    margin: 0 8px;
-}
-
-@media screen and (max-width: 700px) {
-    header {
-        flex-direction: column;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+  }
+   
+  header.navbar-container .nav-list li:hover a {
+    background-color: #425c77;
+    color: white;
+  }
+   
+  main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+   
+  main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+   
+  main .content .content-description {
+    flex: 1 1;
+  }
+   
+  main .content .content-description .title {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+    color: blue;
+  }
+   
+  main .content .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    color: blue;
+  }
+   
+  main .content .content-description button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: white;
+   
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #2D3E50;
+    cursor: pointer;
+    transition: all .15s ease-in;
+  }
+   
+  main .content .content-description button:hover {
+    border: 3px solid #2D3E50;
+    color: #2D3E50;
+    background-color: transparent;
+  }
+   
+  main .content .content-image {
+    flex: 1;
+    display: flex;
+  }
+   
+  main .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+  }
+   
+  main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+   
+  main aside .social-media {
+    height: 100%;
+    display: flex;
+  }
+   
+  main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #2D3E50;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+   
+  main aside .social-media li {
+    list-style-type: none;
+  }
+   
+  main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+  }
+   
+  main aside .social-media li a:hover {
+    color: #89b0d9;
+  }
+  
+  footer {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  text-align: right;
+  }
+   
+  /* Medium devices (landscape tablets, 768px and down) */
+  @media screen and (max-width: 768px) {
+    header.navbar-container {
+      flex-direction: column;
     }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
+   
+    header.navbar-container .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: .5rem;
     }
-
+   
     main {
-        flex-direction: column;
-        align-items: center;
+      padding: 1rem 3rem;
     }
-
-    main .blog-post {
-        flex-basis: 100%; /* Menempati seluruh lebar pada perangkat kecil */
+   
+    main .content {
+      flex-direction: column;
+      gap: 2rem;
     }
-}
+   
+    main .content .content-description .title {
+      font-size: 3rem;
+    }
+   
+    main .content .content-description p {
+      font-size: 1rem;
+    }
+   
+    main .content .content-image {
+      order: -1;
+    }
+    
+    footer {
+      flex-direction: column;
+    }
+  }
+  
