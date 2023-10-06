@@ -4,5 +4,5 @@
         // Tambahkan event listener untuk menangkap klik pada tombol
         button.addEventListener("click", function() {
             // Arahkan pengguna ke tautan Instagram yang diinginkan
-            window.location.href = "https://vt.tiktok.com/ZSN175wUo/"; // Gantilah "USERNAME_ANDA" dengan nama pengguna Instagram Anda
+            window.location.href = "https://www.instagram.com/reel/Cx3IC7Sy5BN/?igshid=MTc4MmM1YmI2Ng%3D%3D"; // Gantilah "USERNAME_ANDA" dengan nama pengguna Instagram Anda
         });
